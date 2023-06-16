@@ -1,0 +1,283 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Framework7 App</title>
+<link href="css/framework7.bundle.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+
+<div id="app">
+    <div class="view view-main view-init">
+
+        <section id="panel-menu" class="panel panel-left panel-cover">
+
+            <div class="block perfil">
+
+                <div class="row">
+                    <article class="col-30">
+                        <img src="img/perfil-avatar.png" alt="" class="img-fluid">
+                    </article>
+                    <article class="col-70">
+                        <h6>Padam Boora</h6>
+                    </article>
+                </div>
+
+            </div>
+
+
+            <div id="menu-list" class="list media-list">
+              <ul>
+				<li>
+                  <a href="/home/" class="item-link item-content panel-close">
+                    <div class="item-media">
+                        <span class="material-icons">home</span>
+                    </div>
+                    <div class="item-inner">
+                      <div class="item-title">Inicio</div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="/hamburguesas/" class="item-link item-content panel-close">
+                    <div class="item-media">
+                        <span class="material-icons">lunch_dining</span>
+                    </div>
+                    <div class="item-inner">
+                      <div class="item-title">Hamburguesas</div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="/pizzas/" class="item-link item-content panel-close">
+                      <div class="item-media">
+                        <span class="material-icons">local_pizza</span>
+                      </div>
+                    <div class="item-inner">
+                      <div class="item-title">Pizzas</div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="/tarjetas/" class="item-link item-content panel-close">
+                    <div class="item-media">
+                        <span class="material-icons">credit_card</span>
+                    </div>
+                    <div class="item-inner">
+                      <div class="item-title">Tarjetas</div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="item-link item-content">
+                    <div class="item-media">
+                        <span class="material-icons">liquor</span>
+                    </div>
+                    <div class="item-inner">
+                      <div class="item-title">Bebidas</div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="item-link item-content">
+                    <div class="item-media">
+                        <span class="material-icons">shopping_bag</span>
+                    </div>
+                    <div class="item-inner">
+                      <div class="item-title">Mis Ordenes</div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="/settings/" class="item-link item-content panel-close">
+                    <div class="item-media">
+                        <span class="material-icons">settings</span>
+                    </div>
+                    <div class="item-inner">
+                      <div class="item-title">Configuración</div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="item-link item-content">
+                    <div class="item-media">
+                        <span class="material-icons">info</span>
+                    </div>
+                    <div class="item-inner">
+                      <div class="item-title">Acerca de..</div>
+                    </div>
+                  </a>
+                </li>
+            </ul>
+            </div>
+
+
+        </section>
+
+
+
+        <section data-name="home" class="page">
+
+          <!-- Top Navbar -->
+          <nav class="navbar">
+            <div class="navbar-bg"></div>
+            <div class="navbar-inner">
+                <div class="left">
+                    <a href="#" class="link"><span class="material-icons">settings</span></a>
+                </div>
+                <div class="title">Aprendizaje App</div>
+                <div class="right">
+                    <a href="#" class="link panel-open" data-panel="left"><span class="material-icons">menu</span></a>
+                </div>
+            </div>
+          </nav>
+
+          <section class="page-content">
+
+            <h2 class="block-title-large block-title">Seven Burger</h2>
+
+            <section id="carousel" class="block">
+
+				<div class="swiper-container swiper-init" data-speed="400" data-space-between="10" data-slides-per-view="1">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="img/slide-1.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/slide-2.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="swiper-slide">
+							<img src="img/slide-3.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="swiper-slide">
+							<div class="row">
+								<article class="col-40">
+									Free Pizza
+								</article>
+								<article class="col-60">
+									<img src="img/pepperoni.png" alt="" class="img-fluid">
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+
+          	</section>
+
+            <h2 class="block-title">Categories</h2>
+
+            <section id="categories" class="block">
+				
+				<div class="swiper-container swiper-init" data-speed="400" data-space-between="50" data-slides-per-view="3">
+                	<div class="swiper-wrapper">
+
+						<div class="swiper-slide">
+						<a href="/hamburguesas/" class="link">
+							<div class="btn-categorie">
+								<div class="row">
+									<article class="col-40">
+										<img src="img/bigmac.png" alt="" class="img-fluid">
+									</article>
+									<article class="col-60 nombre">
+										Burger
+									</article>
+								</div>
+							</div>
+						</a>
+						</div>
+						
+						<div class="swiper-slide">
+						<a href="/pizzas/" class="link">
+							<div class="btn-categorie">
+							<div class="row">
+								<article class="col-40">
+									<img src="img/pepperoni.png" alt="" class="img-fluid">
+								</article>
+								<article class="col-60 nombre">
+									Pizza
+								</article>
+							</div>
+						</div>
+						</a>
+						</div>
+						
+						<div class="swiper-slide">
+							<div class="btn-categorie">
+							<div class="row">
+								<article class="col-40">
+									<img src="img/chocolate-donut.png" alt="" class="img-fluid">
+								</article>
+								<article class="col-60 nombre">
+									Donuts
+								</article>
+							</div>
+						</div>
+						</div>
+						
+						<div class="swiper-slide">
+							<div class="btn-categorie">
+							<div class="row">
+								<article class="col-40">
+									<img src="img/apple-pie.png" alt="" class="img-fluid">
+								</article>
+								<article class="col-60 nombre">
+									Pies
+								</article>
+							</div>
+						</div>
+						</div>
+						
+					</div>
+				</div>
+
+            </section>
+
+            <h2 class="block-title">Popular Now</h2>
+
+            <section class="card-products block">
+
+                <div class="row">
+
+                    <article class="col">
+                        <div class="card">
+							<a href="/bigmac/" class="link">
+                            	<img src="img/mix.png" alt="" class="img-fluid">
+							</a>
+                            <h3>Mix</h3>
+                            <p>Bacon, chicken, ham</p>
+                            <h4>$ 6.59</h4>
+                        </div>
+                    </article>
+
+                    <article class="col">
+                        <div class="card">
+                            <img src="img/pepperoni.png" alt="" class="img-fluid">
+                            <h3>Pepperoni</h3>
+                            <p>Spicy pepperoni with a extra mozzarella</p>
+                            <h4>$ 6.25</h4>
+                        </div>
+                    </article>
+                </div>
+
+            </section>
+
+        </section>
+
+    	</section>
+
+    </div>
+</div>
+	
+	
+	
+	
+	<script src="js/framework7.bundle.min.js"></script>
+	<script src="js/app.js"></script>
+	
+</body>
+</html>
